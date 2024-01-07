@@ -1,2 +1,2 @@
-Twitch Username:
-Set 160p:
+Twitch Username: qtpowfy
+Set 160p: yes
