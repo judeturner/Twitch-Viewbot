@@ -68,7 +68,7 @@ def main():
 def print_announcement():
     try:
         # Announcement
-        announcement = "No new announcements"
+        announcement = "Welcome to Twitch Viewbot (WIN) Created by Jude Turner"
         return announcement
     except:
         print("Could not retrieve announcement from GitHub.\n")
@@ -81,7 +81,7 @@ def main():
     
     twitch_username, set_160p = load_settings()
 
-    os.system(f"title Powfy - Twitch Viewer Bot @powfy. ")
+    os.system(f"title Turner - Twitch Viewer Bot @Turner ")
 
     print(Colorate.Vertical(Colors.green_to_cyan, Center.XCenter("""
            
@@ -112,7 +112,7 @@ def main():
     print(Colors.red, "Proxy servers are randomly selected every time")
     if twitch_username is None or set_160p is None:
         
-        twitch_username = input(Colorate.Vertical(Colors.green_to_blue, "Enter your channel name (e.g qtpowfy): "))
+        twitch_username = input(Colorate.Vertical(Colors.green_to_blue, "Enter your channel name (e.g judeturner): "))
         set_160p = input(Colorate.Vertical(Colors.purple_to_red,"Do you want to set the stream quality to 160p? (yes/no): "))
 
         save_settings(twitch_username, set_160p)
@@ -121,7 +121,7 @@ def main():
         use_settings = input(Colorate.Vertical(Colors.green_to_blue, " Do you want to use your saved settings? (yes/no): "))
         if use_settings.lower() == "no":
             
-            twitch_username = input(Colorate.Vertical(Colors.green_to_blue, "Enter your channel name (e.g qtpowfy): "))
+            twitch_username = input(Colorate.Vertical(Colors.green_to_blue, "Enter your channel name (e.g judeturner): "))
             set_160p = input(Colorate.Vertical(Colors.purple_to_red,"Do you want to set the stream quality to 160p? (yes/no): "))
 
             save_settings(twitch_username, set_160p)
@@ -184,7 +184,7 @@ if __name__ == '__main__':
     main()
 
 # ==========================================
-# Copyright 2023 Jude Turner
+# Copyright 2024 Jude Turner
 
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
